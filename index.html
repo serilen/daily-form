@@ -16,19 +16,20 @@
 <body>
 	<main class="main">
 		<div class="container">
-			<a class="logo__link" href="#">
-				<img class="logo__img" src="image/icon.png" alt="logo">
-			</a>
-			<h1 class="main__title">Create your free account</h1>
-			<p class="main__subtitle">Come and join our cool and amazing community, fill in your detalis to get started. Already have an account? <span class="main__lead"><a class="main__link" href="#">Log in.</a></span></p>
-			<form action="#">
-			<input class="input input__first-name" type="text" placeholder="First name">
-			<input class="input input__last-name" type="text" placeholder="Last name">
-			<input class="input input__email" type="email" placeholder="Email address">
-			<input class="input input__password" type="password" placeholder="Password">
-			<button class="btn" type="submit">Sign up for free</button>
-			</form>
-			<p class="main__text">By clicking on "Sign up for free", you agree to thr <span class="main__lead"><a class="main__link" href="#">Terms of Service</a></span> and the <span class="main__lead"><a class="main__link" href="#">Privacy policy</a></span></p>
+			<div class="signup-window">
+				<h1 class="signup-window__title"><img src="image/icon.png" alt="logo">Create your free account</h1>
+				<p class="signup-window__subtitle">Come and join our cool and amazing community, fill in your detalis to get started. Already have an account? <a class="signup-window__link" href="#">Log in.</a></p>
+				<form class="signup-window__form" action="#" method="get">
+					<div class="signup-group-field">
+						<input class="field-input field-input__small" type="text" name="first_name" value="" placeholder="First name" required minlength="4" maxlength="30" size="30">
+						<input class="field-input field-input__small" type="text" name="last_name" value="" placeholder="Last name" required minlength="4" maxlength="30" size="30">
+					</div>
+					<input class="field-input" type="email" name="email" value="" placeholder="Email address" required>
+					<input class="field-input" type="password" name="password" value="" placeholder="Password" required pattern="^[a-z0-9_]{3,10}$">
+					<button class="btn" type="submit">Sign up for free</button>
+				</form>
+				<p class="signup-window__text">By clicking on "Sign up for free", you agree to thr <a class="signup-window__link" href="#">Terms of Service</a> and the <a class="signup-window__link" href="#">Privacy policy</a></p>
+			</div>
 		</div>
 	</main>
 </body>

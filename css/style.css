@@ -25,104 +25,80 @@ html, body{
 }
 
 .main {
-	position: relative;
 	background-image: url('../image/main-bg.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+}
+
+.container {
+	padding: 61px 0;
 	max-width: 800px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 61px 0 68px 0;
 }
 
-.container {
+.signup-window {
 	background-color: #fff;
 	max-width: 461px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 31px 30px 61px 30px;
+	padding: 31px;
 }
 
-.logo__img {
-	display: inline-block;
-}
-
-.logo__link {
-	display: inline-block;
-	text-decoration: none;
-}
-
-.logo__link:focus {
-	border: 2px solid #2e2;
-}
-
-.logo__link:hover {
-	opacity: 0.5;
-}
-
-.logo__link:active {
-	opacity: 0.2;
-}
-
-.main__title {
-	display: inline-block;
+.signup-window__title {
 	font-size: 24px;
 	margin-bottom: 15px;
 }
 
-.main__subtitle {
+.signup-window__subtitle {
 	margin-bottom: 34px;
-	max-width: 388px;
 }
 
-.main__lead {
+.signup-window__link {
+	text-decoration: none;
 	color: #ea355a;
 }
 
-.main__link {
-	text-decoration: none;
-	color: inherit;
-}
-
-.main__link:focus {
+.signup-window__link:focus {
 	box-shadow: 0 0 0 5px #0f0f;
 }
 
-.main__link:hover {
+.signup-window__link:hover {
 	opacity: 0.5;
 }
 
-.main__link:active {
+.signup-window__link:active {
 	opacity: 0.2;
 }
 
-.input {
+.signup-window__form {
+	margin-bottom: 22px;
+}
+
+.field-input {
 	font-size: 14px;
 	background-color: #f0f0f0;
 	padding: 13px;
 	margin-bottom: 15px;
 	border: none;
 	border-radius: 6px;
+	width: 100%;
 }
 
-.input__first-name {
-	width: 190px;
+.signup-group-field {
+	font-size: 0;
+}
+
+.field-input__small {
+	width: calc((100% - 15px) / 2);
 	margin-right: 15px;
 }
 
-.input__last-name {
-	width: 190px;
-}
-
-.input__email {
-	width: 100%;
-}
-
-.input__password {
-	width: 100%;
+.field-input__small:last-child {
+	margin-right: 0;
 }
 
 .btn {
@@ -135,7 +111,6 @@ html, body{
 	color: #fff;
 	border: none;
 	border-radius: 6px;
-	margin-bottom: 22px;
 }
 
 .btn:focus {
@@ -150,9 +125,9 @@ html, body{
 	opacity: 0.3;
 }
 
-.main__text {
+.signup-window__text {
 	font-size: 12px;
-	max-width: 388px;
+	margin-bottom: 30px;
 }
 
 
