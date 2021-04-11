@@ -18,21 +18,18 @@ html, body{
 	font-family: 'ArialMt', Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
-	color: #000;
+	color: #b6b7b9;
 	line-height: 1.4;
 	background-color: #282828;
 	padding: 20px;
 }
 
 .main {
-	background-image: url('../image/main-bg.png');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+	background: linear-gradient(to right top, #ff512f, #dd2476);
 }
 
 .container {
-	padding: 61px 0;
+	padding: 61px 15px;
 	max-width: 800px;
 	width: 100%;
 	margin-left: auto;
@@ -45,11 +42,27 @@ html, body{
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 31px;
+	padding: 31px 31px 61px 31px;
 }
 
 .signup-window__title {
+	display: inline-block;
 	font-size: 24px;
+	color: #000;
+	vertical-align: middle;
+}
+
+.signup__icon {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.wrap-group {
+	font-size: 0;
+}
+
+.wrap-group__title {
 	margin-bottom: 15px;
 }
 
@@ -57,24 +70,27 @@ html, body{
 	margin-bottom: 34px;
 }
 
-.signup-window__link {
+.link {
+	display: inline-block;
 	text-decoration: none;
 	color: #ea355a;
 }
 
-.signup-window__link:focus {
+.link:focus {
 	box-shadow: 0 0 0 5px #0f0f;
 }
 
-.signup-window__link:hover {
-	opacity: 0.5;
+.link:hover {
+	color: #890435;
+	background-color: #ede234;
+	font-weight: 700;
 }
 
-.signup-window__link:active {
+.link:active {
 	opacity: 0.2;
 }
 
-.signup-window__form {
+.form {
 	margin-bottom: 22px;
 }
 
@@ -88,24 +104,25 @@ html, body{
 	width: 100%;
 }
 
-.signup-group-field {
-	font-size: 0;
-}
-
-.field-input__small {
+.field-input--small {
 	width: calc((100% - 15px) / 2);
 	margin-right: 15px;
+	margin-bottom: 0;
 }
 
-.field-input__small:last-child {
+.field-input--small:last-child {
 	margin-right: 0;
 }
 
+.wrap-group__field {
+	margin-bottom: 15px;
+}
+
 .btn {
-	width: 100%;
+	display: block;
 	font-size: 18px;
 	font-weight: 700;
-	padding: 16px 0;
+	padding: 16px 24px;
 	text-align: center;
 	background-color: #ea355a;
 	color: #fff;
@@ -113,12 +130,18 @@ html, body{
 	border-radius: 6px;
 }
 
+.btn--full {
+	width: 100%;
+}
+
 .btn:focus {
 	box-shadow: 0 0 0 5px #0f0f;
 }
 
 .btn:hover {
-	opacity: 0.5;
+	background-color: #fff;
+	color: #ea355a;
+	border: 1px solid #ea355a;
 }
 
 .btn:active {
@@ -127,7 +150,6 @@ html, body{
 
 .signup-window__text {
 	font-size: 12px;
-	margin-bottom: 30px;
 }
 
 
