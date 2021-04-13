@@ -7,25 +7,33 @@
 
 }
 
-* {
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0;
 	transition: all .3s ease-in;
 }
 
 html, body{
 	font-family: 'ArialMt', Arial, sans-serif;
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: 400;
 	color: #b6b7b9;
 	line-height: 1.4;
 	background-color: #282828;
 	padding: 20px;
+	height: 100%;
+	max-height: 100vh;
 }
 
 .main {
-	background: linear-gradient(to right top, #ff512f, #dd2476);
+	background: rgb(255, 81, 47);
+	background: -webkit-linear-gradient(to top right, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%);
+	background: -o-linear-gradient(to top right, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%);
+	background: -ms-linear-gradient(to top right, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%);
+	background: linear-gradient(to top right, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%);
+	height: 100%;
 }
 
 .container {
@@ -37,6 +45,7 @@ html, body{
 }
 
 .signup-window {
+	font-size: 13px;
 	background-color: #fff;
 	max-width: 461px;
 	width: 100%;
@@ -47,27 +56,33 @@ html, body{
 
 .signup-window__title {
 	display: inline-block;
-	font-size: 24px;
+	margin-bottom: 15px;
 	color: #000;
 	vertical-align: middle;
 }
 
-.signup__icon {
+.signup-window__icon {
 	display: inline-block;
 	margin-right: 10px;
 	vertical-align: middle;
 }
 
-.wrap-group {
-	font-size: 0;
-}
-
-.wrap-group__title {
-	margin-bottom: 15px;
+.signup-window__title-text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 24px;
 }
 
 .signup-window__subtitle {
 	margin-bottom: 34px;
+}
+
+.signup-window__text {
+	font-size: 12px;
+}
+
+.wrap-group {
+	font-size: 0;
 }
 
 .link {
@@ -77,7 +92,7 @@ html, body{
 }
 
 .link:focus {
-	box-shadow: 0 0 0 5px #0f0f;
+	box-shadow: 0 0 0 1px #ea355a;
 }
 
 .link:hover {
@@ -87,35 +102,33 @@ html, body{
 }
 
 .link:active {
-	opacity: 0.2;
+	color: #890435;
 }
 
-.form {
+.signup-form {
 	margin-bottom: 22px;
 }
 
-.field-input {
+.signup-form__field {
+	margin-bottom: 15px;
+}
+
+.form-control {
+	width: 100%;
 	font-size: 14px;
 	background-color: #f0f0f0;
 	padding: 13px;
-	margin-bottom: 15px;
 	border: none;
 	border-radius: 6px;
-	width: 100%;
 }
 
-.field-input--small {
+.form-control--small {
 	width: calc((100% - 15px) / 2);
 	margin-right: 15px;
-	margin-bottom: 0;
 }
 
-.field-input--small:last-child {
+.form-control--small:last-child {
 	margin-right: 0;
-}
-
-.wrap-group__field {
-	margin-bottom: 15px;
 }
 
 .btn {
@@ -148,9 +161,6 @@ html, body{
 	opacity: 0.3;
 }
 
-.signup-window__text {
-	font-size: 12px;
-}
 
 
 
